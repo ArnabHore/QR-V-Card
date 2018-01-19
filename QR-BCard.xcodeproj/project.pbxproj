@@ -1,0 +1,785 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		071CCD4C1F093A73006C7AD3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 071CCD4B1F093A73006C7AD3 /* AppDelegate.swift */; };
+		071CCD511F093A73006C7AD3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 071CCD4F1F093A73006C7AD3 /* Main.storyboard */; };
+		071CCD541F093A74006C7AD3 /* QR_BCard.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 071CCD521F093A74006C7AD3 /* QR_BCard.xcdatamodeld */; };
+		071CCD561F093A74006C7AD3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 071CCD551F093A74006C7AD3 /* Assets.xcassets */; };
+		071CCD591F093A74006C7AD3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 071CCD571F093A74006C7AD3 /* LaunchScreen.storyboard */; };
+		071CCD641F093A75006C7AD3 /* QR_BCardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 071CCD631F093A75006C7AD3 /* QR_BCardTests.swift */; };
+		071CCD6F1F093A75006C7AD3 /* QR_BCardUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 071CCD6E1F093A75006C7AD3 /* QR_BCardUITests.swift */; };
+		071CCD7D1F093B0B006C7AD3 /* QRScannerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 071CCD7C1F093B0B006C7AD3 /* QRScannerController.swift */; };
+		071CCD7F1F093B48006C7AD3 /* MyQRViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 071CCD7E1F093B48006C7AD3 /* MyQRViewController.swift */; };
+		071CCD811F093B67006C7AD3 /* ScannedQRViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 071CCD801F093B67006C7AD3 /* ScannedQRViewController.swift */; };
+		071CCD861F09405F006C7AD3 /* list.png in Resources */ = {isa = PBXBuildFile; fileRef = 071CCD831F09405F006C7AD3 /* list.png */; };
+		071CCD871F09405F006C7AD3 /* list@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 071CCD841F09405F006C7AD3 /* list@2x.png */; };
+		071CCD881F09405F006C7AD3 /* list@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 071CCD851F09405F006C7AD3 /* list@3x.png */; };
+		071CCD991F094488006C7AD3 /* me.png in Resources */ = {isa = PBXBuildFile; fileRef = 071CCD931F094488006C7AD3 /* me.png */; };
+		071CCD9A1F094488006C7AD3 /* me@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 071CCD941F094488006C7AD3 /* me@2x.png */; };
+		071CCD9B1F094488006C7AD3 /* me@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 071CCD951F094488006C7AD3 /* me@3x.png */; };
+		071CCD9C1F094488006C7AD3 /* qr.png in Resources */ = {isa = PBXBuildFile; fileRef = 071CCD961F094488006C7AD3 /* qr.png */; };
+		071CCD9D1F094488006C7AD3 /* qr@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 071CCD971F094488006C7AD3 /* qr@2x.png */; };
+		071CCD9E1F094488006C7AD3 /* qr@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 071CCD981F094488006C7AD3 /* qr@3x.png */; };
+		071CCDA01F09556A006C7AD3 /* CreateQRViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 071CCD9F1F09556A006C7AD3 /* CreateQRViewController.swift */; };
+		071CCDB31F095B3E006C7AD3 /* add.png in Resources */ = {isa = PBXBuildFile; fileRef = 071CCDAD1F095B3E006C7AD3 /* add.png */; };
+		071CCDB41F095B3E006C7AD3 /* add@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 071CCDAE1F095B3E006C7AD3 /* add@2x.png */; };
+		071CCDB51F095B3E006C7AD3 /* add@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 071CCDAF1F095B3E006C7AD3 /* add@3x.png */; };
+		071CCDB61F095B3E006C7AD3 /* cancel.png in Resources */ = {isa = PBXBuildFile; fileRef = 071CCDB01F095B3E006C7AD3 /* cancel.png */; };
+		071CCDB71F095B3E006C7AD3 /* cancel@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 071CCDB11F095B3E006C7AD3 /* cancel@2x.png */; };
+		071CCDB81F095B3E006C7AD3 /* cancel@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 071CCDB21F095B3E006C7AD3 /* cancel@3x.png */; };
+		07295AE21F1A6322001439AF /* list_grey.png in Resources */ = {isa = PBXBuildFile; fileRef = 07295AD91F1A6322001439AF /* list_grey.png */; };
+		07295AE31F1A6322001439AF /* list_grey@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 07295ADA1F1A6322001439AF /* list_grey@2x.png */; };
+		07295AE41F1A6322001439AF /* list_grey@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 07295ADB1F1A6322001439AF /* list_grey@3x.png */; };
+		07295AE51F1A6322001439AF /* me_grey.png in Resources */ = {isa = PBXBuildFile; fileRef = 07295ADC1F1A6322001439AF /* me_grey.png */; };
+		07295AE61F1A6322001439AF /* me_grey@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 07295ADD1F1A6322001439AF /* me_grey@2x.png */; };
+		07295AE71F1A6322001439AF /* me_grey@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 07295ADE1F1A6322001439AF /* me_grey@3x.png */; };
+		07295AE81F1A6322001439AF /* qr_grey.png in Resources */ = {isa = PBXBuildFile; fileRef = 07295ADF1F1A6322001439AF /* qr_grey.png */; };
+		07295AE91F1A6322001439AF /* qr_grey@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 07295AE01F1A6322001439AF /* qr_grey@2x.png */; };
+		07295AEA1F1A6322001439AF /* qr_grey@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 07295AE11F1A6322001439AF /* qr_grey@3x.png */; };
+		072B23AA1F12179B00B74BC1 /* Orange Coral.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 072B23A91F12179B00B74BC1 /* Orange Coral.jpg */; };
+		072B23B81F12192C00B74BC1 /* Brandon_bld.otf in Resources */ = {isa = PBXBuildFile; fileRef = 072B23AC1F12185500B74BC1 /* Brandon_bld.otf */; };
+		072B23B91F12192C00B74BC1 /* Brandon_bld_it.otf in Resources */ = {isa = PBXBuildFile; fileRef = 072B23AD1F12185500B74BC1 /* Brandon_bld_it.otf */; };
+		072B23BA1F12192C00B74BC1 /* Brandon_blk.otf in Resources */ = {isa = PBXBuildFile; fileRef = 072B23AE1F12185500B74BC1 /* Brandon_blk.otf */; };
+		072B23BB1F12192C00B74BC1 /* Brandon_blk_it.otf in Resources */ = {isa = PBXBuildFile; fileRef = 072B23AF1F12185500B74BC1 /* Brandon_blk_it.otf */; };
+		072B23BC1F12192C00B74BC1 /* Brandon_light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 072B23B01F12185500B74BC1 /* Brandon_light.otf */; };
+		072B23BD1F12192C00B74BC1 /* Brandon_light_it.otf in Resources */ = {isa = PBXBuildFile; fileRef = 072B23B11F12185500B74BC1 /* Brandon_light_it.otf */; };
+		072B23BE1F12192C00B74BC1 /* Brandon_med.otf in Resources */ = {isa = PBXBuildFile; fileRef = 072B23B21F12185500B74BC1 /* Brandon_med.otf */; };
+		072B23BF1F12192C00B74BC1 /* Brandon_med_it.otf in Resources */ = {isa = PBXBuildFile; fileRef = 072B23B31F12185500B74BC1 /* Brandon_med_it.otf */; };
+		072B23C01F12192C00B74BC1 /* Brandon_reg.otf in Resources */ = {isa = PBXBuildFile; fileRef = 072B23B41F12185500B74BC1 /* Brandon_reg.otf */; };
+		072B23C11F12192C00B74BC1 /* Brandon_reg_it.otf in Resources */ = {isa = PBXBuildFile; fileRef = 072B23B51F12185500B74BC1 /* Brandon_reg_it.otf */; };
+		072B23C21F12192C00B74BC1 /* Brandon_thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = 072B23B61F12185500B74BC1 /* Brandon_thin.otf */; };
+		072B23C31F12192C00B74BC1 /* Brandon_thin_it.otf in Resources */ = {isa = PBXBuildFile; fileRef = 072B23B71F12185500B74BC1 /* Brandon_thin_it.otf */; };
+		07379BFC1F2E3C8B007C686A /* icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 07379BFA1F2E3C8B007C686A /* icon@2x.png */; };
+		07379BFD1F2E3C8B007C686A /* icon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 07379BFB1F2E3C8B007C686A /* icon@3x.png */; };
+		07AF04981F0EBE4300EE9C20 /* ViewDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07AF04971F0EBE4300EE9C20 /* ViewDetailsViewController.swift */; };
+		07AF04A51F0ECF9100EE9C20 /* add_new.png in Resources */ = {isa = PBXBuildFile; fileRef = 07AF04A21F0ECF9100EE9C20 /* add_new.png */; };
+		07AF04A61F0ECF9100EE9C20 /* add_new@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 07AF04A31F0ECF9100EE9C20 /* add_new@2x.png */; };
+		07AF04A71F0ECF9100EE9C20 /* add_new@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 07AF04A41F0ECF9100EE9C20 /* add_new@3x.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		071CCD601F093A75006C7AD3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 071CCD401F093A72006C7AD3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 071CCD471F093A73006C7AD3;
+			remoteInfo = "QR-BCard";
+		};
+		071CCD6B1F093A75006C7AD3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 071CCD401F093A72006C7AD3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 071CCD471F093A73006C7AD3;
+			remoteInfo = "QR-BCard";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		071CCD481F093A73006C7AD3 /* QR-BCard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "QR-BCard.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		071CCD4B1F093A73006C7AD3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		071CCD501F093A73006C7AD3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		071CCD531F093A74006C7AD3 /* QR_BCard.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = QR_BCard.xcdatamodel; sourceTree = "<group>"; };
+		071CCD551F093A74006C7AD3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		071CCD581F093A74006C7AD3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		071CCD5A1F093A74006C7AD3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		071CCD5F1F093A75006C7AD3 /* QR-BCardTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "QR-BCardTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		071CCD631F093A75006C7AD3 /* QR_BCardTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QR_BCardTests.swift; sourceTree = "<group>"; };
+		071CCD651F093A75006C7AD3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		071CCD6A1F093A75006C7AD3 /* QR-BCardUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "QR-BCardUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		071CCD6E1F093A75006C7AD3 /* QR_BCardUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QR_BCardUITests.swift; sourceTree = "<group>"; };
+		071CCD701F093A75006C7AD3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		071CCD7C1F093B0B006C7AD3 /* QRScannerController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRScannerController.swift; sourceTree = "<group>"; };
+		071CCD7E1F093B48006C7AD3 /* MyQRViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyQRViewController.swift; sourceTree = "<group>"; };
+		071CCD801F093B67006C7AD3 /* ScannedQRViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScannedQRViewController.swift; sourceTree = "<group>"; };
+		071CCD831F09405F006C7AD3 /* list.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = list.png; sourceTree = "<group>"; };
+		071CCD841F09405F006C7AD3 /* list@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "list@2x.png"; sourceTree = "<group>"; };
+		071CCD851F09405F006C7AD3 /* list@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "list@3x.png"; sourceTree = "<group>"; };
+		071CCD931F094488006C7AD3 /* me.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = me.png; sourceTree = "<group>"; };
+		071CCD941F094488006C7AD3 /* me@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "me@2x.png"; sourceTree = "<group>"; };
+		071CCD951F094488006C7AD3 /* me@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "me@3x.png"; sourceTree = "<group>"; };
+		071CCD961F094488006C7AD3 /* qr.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = qr.png; sourceTree = "<group>"; };
+		071CCD971F094488006C7AD3 /* qr@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "qr@2x.png"; sourceTree = "<group>"; };
+		071CCD981F094488006C7AD3 /* qr@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "qr@3x.png"; sourceTree = "<group>"; };
+		071CCD9F1F09556A006C7AD3 /* CreateQRViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateQRViewController.swift; sourceTree = "<group>"; };
+		071CCDAD1F095B3E006C7AD3 /* add.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = add.png; sourceTree = "<group>"; };
+		071CCDAE1F095B3E006C7AD3 /* add@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "add@2x.png"; sourceTree = "<group>"; };
+		071CCDAF1F095B3E006C7AD3 /* add@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "add@3x.png"; sourceTree = "<group>"; };
+		071CCDB01F095B3E006C7AD3 /* cancel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cancel.png; sourceTree = "<group>"; };
+		071CCDB11F095B3E006C7AD3 /* cancel@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cancel@2x.png"; sourceTree = "<group>"; };
+		071CCDB21F095B3E006C7AD3 /* cancel@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cancel@3x.png"; sourceTree = "<group>"; };
+		07295AD91F1A6322001439AF /* list_grey.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = list_grey.png; sourceTree = "<group>"; };
+		07295ADA1F1A6322001439AF /* list_grey@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "list_grey@2x.png"; sourceTree = "<group>"; };
+		07295ADB1F1A6322001439AF /* list_grey@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "list_grey@3x.png"; sourceTree = "<group>"; };
+		07295ADC1F1A6322001439AF /* me_grey.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = me_grey.png; sourceTree = "<group>"; };
+		07295ADD1F1A6322001439AF /* me_grey@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "me_grey@2x.png"; sourceTree = "<group>"; };
+		07295ADE1F1A6322001439AF /* me_grey@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "me_grey@3x.png"; sourceTree = "<group>"; };
+		07295ADF1F1A6322001439AF /* qr_grey.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = qr_grey.png; sourceTree = "<group>"; };
+		07295AE01F1A6322001439AF /* qr_grey@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "qr_grey@2x.png"; sourceTree = "<group>"; };
+		07295AE11F1A6322001439AF /* qr_grey@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "qr_grey@3x.png"; sourceTree = "<group>"; };
+		072B23A91F12179B00B74BC1 /* Orange Coral.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Orange Coral.jpg"; sourceTree = "<group>"; };
+		072B23AC1F12185500B74BC1 /* Brandon_bld.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Brandon_bld.otf; sourceTree = "<group>"; };
+		072B23AD1F12185500B74BC1 /* Brandon_bld_it.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Brandon_bld_it.otf; sourceTree = "<group>"; };
+		072B23AE1F12185500B74BC1 /* Brandon_blk.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Brandon_blk.otf; sourceTree = "<group>"; };
+		072B23AF1F12185500B74BC1 /* Brandon_blk_it.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Brandon_blk_it.otf; sourceTree = "<group>"; };
+		072B23B01F12185500B74BC1 /* Brandon_light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Brandon_light.otf; sourceTree = "<group>"; };
+		072B23B11F12185500B74BC1 /* Brandon_light_it.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Brandon_light_it.otf; sourceTree = "<group>"; };
+		072B23B21F12185500B74BC1 /* Brandon_med.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Brandon_med.otf; sourceTree = "<group>"; };
+		072B23B31F12185500B74BC1 /* Brandon_med_it.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Brandon_med_it.otf; sourceTree = "<group>"; };
+		072B23B41F12185500B74BC1 /* Brandon_reg.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Brandon_reg.otf; sourceTree = "<group>"; };
+		072B23B51F12185500B74BC1 /* Brandon_reg_it.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Brandon_reg_it.otf; sourceTree = "<group>"; };
+		072B23B61F12185500B74BC1 /* Brandon_thin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Brandon_thin.otf; sourceTree = "<group>"; };
+		072B23B71F12185500B74BC1 /* Brandon_thin_it.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Brandon_thin_it.otf; sourceTree = "<group>"; };
+		07379BFA1F2E3C8B007C686A /* icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon@2x.png"; sourceTree = "<group>"; };
+		07379BFB1F2E3C8B007C686A /* icon@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon@3x.png"; sourceTree = "<group>"; };
+		07AF04971F0EBE4300EE9C20 /* ViewDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewDetailsViewController.swift; sourceTree = "<group>"; };
+		07AF04A21F0ECF9100EE9C20 /* add_new.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = add_new.png; sourceTree = "<group>"; };
+		07AF04A31F0ECF9100EE9C20 /* add_new@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "add_new@2x.png"; sourceTree = "<group>"; };
+		07AF04A41F0ECF9100EE9C20 /* add_new@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "add_new@3x.png"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		071CCD451F093A73006C7AD3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		071CCD5C1F093A75006C7AD3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		071CCD671F093A75006C7AD3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		071CCD3F1F093A72006C7AD3 = {
+			isa = PBXGroup;
+			children = (
+				071CCD4A1F093A73006C7AD3 /* QR-BCard */,
+				071CCD621F093A75006C7AD3 /* QR-BCardTests */,
+				071CCD6D1F093A75006C7AD3 /* QR-BCardUITests */,
+				071CCD491F093A73006C7AD3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		071CCD491F093A73006C7AD3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				071CCD481F093A73006C7AD3 /* QR-BCard.app */,
+				071CCD5F1F093A75006C7AD3 /* QR-BCardTests.xctest */,
+				071CCD6A1F093A75006C7AD3 /* QR-BCardUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		071CCD4A1F093A73006C7AD3 /* QR-BCard */ = {
+			isa = PBXGroup;
+			children = (
+				071CCD4B1F093A73006C7AD3 /* AppDelegate.swift */,
+				07AF04A01F0EC31300EE9C20 /* View QR */,
+				07AF04A11F0EC31C00EE9C20 /* Scan */,
+				07AF049F1F0EC30900EE9C20 /* My QR */,
+				071CCD4F1F093A73006C7AD3 /* Main.storyboard */,
+				071CCD551F093A74006C7AD3 /* Assets.xcassets */,
+				071CCD571F093A74006C7AD3 /* LaunchScreen.storyboard */,
+				071CCD5A1F093A74006C7AD3 /* Info.plist */,
+				072B23AB1F12184300B74BC1 /* Fonts */,
+				071CCD821F094051006C7AD3 /* Images */,
+				071CCD521F093A74006C7AD3 /* QR_BCard.xcdatamodeld */,
+			);
+			path = "QR-BCard";
+			sourceTree = "<group>";
+		};
+		071CCD621F093A75006C7AD3 /* QR-BCardTests */ = {
+			isa = PBXGroup;
+			children = (
+				071CCD631F093A75006C7AD3 /* QR_BCardTests.swift */,
+				071CCD651F093A75006C7AD3 /* Info.plist */,
+			);
+			path = "QR-BCardTests";
+			sourceTree = "<group>";
+		};
+		071CCD6D1F093A75006C7AD3 /* QR-BCardUITests */ = {
+			isa = PBXGroup;
+			children = (
+				071CCD6E1F093A75006C7AD3 /* QR_BCardUITests.swift */,
+				071CCD701F093A75006C7AD3 /* Info.plist */,
+			);
+			path = "QR-BCardUITests";
+			sourceTree = "<group>";
+		};
+		071CCD821F094051006C7AD3 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				07379BFA1F2E3C8B007C686A /* icon@2x.png */,
+				07379BFB1F2E3C8B007C686A /* icon@3x.png */,
+				07295AD91F1A6322001439AF /* list_grey.png */,
+				07295ADA1F1A6322001439AF /* list_grey@2x.png */,
+				07295ADB1F1A6322001439AF /* list_grey@3x.png */,
+				07295ADC1F1A6322001439AF /* me_grey.png */,
+				07295ADD1F1A6322001439AF /* me_grey@2x.png */,
+				07295ADE1F1A6322001439AF /* me_grey@3x.png */,
+				07295ADF1F1A6322001439AF /* qr_grey.png */,
+				07295AE01F1A6322001439AF /* qr_grey@2x.png */,
+				07295AE11F1A6322001439AF /* qr_grey@3x.png */,
+				072B23A91F12179B00B74BC1 /* Orange Coral.jpg */,
+				07AF04A21F0ECF9100EE9C20 /* add_new.png */,
+				07AF04A31F0ECF9100EE9C20 /* add_new@2x.png */,
+				07AF04A41F0ECF9100EE9C20 /* add_new@3x.png */,
+				071CCD831F09405F006C7AD3 /* list.png */,
+				071CCD841F09405F006C7AD3 /* list@2x.png */,
+				071CCD851F09405F006C7AD3 /* list@3x.png */,
+				071CCD931F094488006C7AD3 /* me.png */,
+				071CCD941F094488006C7AD3 /* me@2x.png */,
+				071CCD951F094488006C7AD3 /* me@3x.png */,
+				071CCD961F094488006C7AD3 /* qr.png */,
+				071CCD971F094488006C7AD3 /* qr@2x.png */,
+				071CCD981F094488006C7AD3 /* qr@3x.png */,
+				071CCDAD1F095B3E006C7AD3 /* add.png */,
+				071CCDAE1F095B3E006C7AD3 /* add@2x.png */,
+				071CCDAF1F095B3E006C7AD3 /* add@3x.png */,
+				071CCDB01F095B3E006C7AD3 /* cancel.png */,
+				071CCDB11F095B3E006C7AD3 /* cancel@2x.png */,
+				071CCDB21F095B3E006C7AD3 /* cancel@3x.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		072B23AB1F12184300B74BC1 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				072B23AC1F12185500B74BC1 /* Brandon_bld.otf */,
+				072B23AD1F12185500B74BC1 /* Brandon_bld_it.otf */,
+				072B23AE1F12185500B74BC1 /* Brandon_blk.otf */,
+				072B23AF1F12185500B74BC1 /* Brandon_blk_it.otf */,
+				072B23B01F12185500B74BC1 /* Brandon_light.otf */,
+				072B23B11F12185500B74BC1 /* Brandon_light_it.otf */,
+				072B23B21F12185500B74BC1 /* Brandon_med.otf */,
+				072B23B31F12185500B74BC1 /* Brandon_med_it.otf */,
+				072B23B41F12185500B74BC1 /* Brandon_reg.otf */,
+				072B23B51F12185500B74BC1 /* Brandon_reg_it.otf */,
+				072B23B61F12185500B74BC1 /* Brandon_thin.otf */,
+				072B23B71F12185500B74BC1 /* Brandon_thin_it.otf */,
+			);
+			name = Fonts;
+			sourceTree = "<group>";
+		};
+		07AF049F1F0EC30900EE9C20 /* My QR */ = {
+			isa = PBXGroup;
+			children = (
+				071CCD7E1F093B48006C7AD3 /* MyQRViewController.swift */,
+				071CCD9F1F09556A006C7AD3 /* CreateQRViewController.swift */,
+			);
+			name = "My QR";
+			sourceTree = "<group>";
+		};
+		07AF04A01F0EC31300EE9C20 /* View QR */ = {
+			isa = PBXGroup;
+			children = (
+				071CCD801F093B67006C7AD3 /* ScannedQRViewController.swift */,
+				07AF04971F0EBE4300EE9C20 /* ViewDetailsViewController.swift */,
+			);
+			name = "View QR";
+			sourceTree = "<group>";
+		};
+		07AF04A11F0EC31C00EE9C20 /* Scan */ = {
+			isa = PBXGroup;
+			children = (
+				071CCD7C1F093B0B006C7AD3 /* QRScannerController.swift */,
+			);
+			name = Scan;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		071CCD471F093A73006C7AD3 /* QR-BCard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 071CCD731F093A75006C7AD3 /* Build configuration list for PBXNativeTarget "QR-BCard" */;
+			buildPhases = (
+				071CCD441F093A73006C7AD3 /* Sources */,
+				071CCD451F093A73006C7AD3 /* Frameworks */,
+				071CCD461F093A73006C7AD3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "QR-BCard";
+			productName = "QR-BCard";
+			productReference = 071CCD481F093A73006C7AD3 /* QR-BCard.app */;
+			productType = "com.apple.product-type.application";
+		};
+		071CCD5E1F093A75006C7AD3 /* QR-BCardTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 071CCD761F093A75006C7AD3 /* Build configuration list for PBXNativeTarget "QR-BCardTests" */;
+			buildPhases = (
+				071CCD5B1F093A75006C7AD3 /* Sources */,
+				071CCD5C1F093A75006C7AD3 /* Frameworks */,
+				071CCD5D1F093A75006C7AD3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				071CCD611F093A75006C7AD3 /* PBXTargetDependency */,
+			);
+			name = "QR-BCardTests";
+			productName = "QR-BCardTests";
+			productReference = 071CCD5F1F093A75006C7AD3 /* QR-BCardTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		071CCD691F093A75006C7AD3 /* QR-BCardUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 071CCD791F093A75006C7AD3 /* Build configuration list for PBXNativeTarget "QR-BCardUITests" */;
+			buildPhases = (
+				071CCD661F093A75006C7AD3 /* Sources */,
+				071CCD671F093A75006C7AD3 /* Frameworks */,
+				071CCD681F093A75006C7AD3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				071CCD6C1F093A75006C7AD3 /* PBXTargetDependency */,
+			);
+			name = "QR-BCardUITests";
+			productName = "QR-BCardUITests";
+			productReference = 071CCD6A1F093A75006C7AD3 /* QR-BCardUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		071CCD401F093A72006C7AD3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Arnab Hore";
+				TargetAttributes = {
+					071CCD471F093A73006C7AD3 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = Q9QD5LY5L7;
+						ProvisioningStyle = Automatic;
+					};
+					071CCD5E1F093A75006C7AD3 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = Q9QD5LY5L7;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 071CCD471F093A73006C7AD3;
+					};
+					071CCD691F093A75006C7AD3 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = Q9QD5LY5L7;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 071CCD471F093A73006C7AD3;
+					};
+				};
+			};
+			buildConfigurationList = 071CCD431F093A72006C7AD3 /* Build configuration list for PBXProject "QR-BCard" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 071CCD3F1F093A72006C7AD3;
+			productRefGroup = 071CCD491F093A73006C7AD3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				071CCD471F093A73006C7AD3 /* QR-BCard */,
+				071CCD5E1F093A75006C7AD3 /* QR-BCardTests */,
+				071CCD691F093A75006C7AD3 /* QR-BCardUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		071CCD461F093A73006C7AD3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				072B23B81F12192C00B74BC1 /* Brandon_bld.otf in Resources */,
+				07379BFC1F2E3C8B007C686A /* icon@2x.png in Resources */,
+				07379BFD1F2E3C8B007C686A /* icon@3x.png in Resources */,
+				072B23B91F12192C00B74BC1 /* Brandon_bld_it.otf in Resources */,
+				072B23BA1F12192C00B74BC1 /* Brandon_blk.otf in Resources */,
+				07295AE31F1A6322001439AF /* list_grey@2x.png in Resources */,
+				072B23BB1F12192C00B74BC1 /* Brandon_blk_it.otf in Resources */,
+				072B23BC1F12192C00B74BC1 /* Brandon_light.otf in Resources */,
+				072B23BD1F12192C00B74BC1 /* Brandon_light_it.otf in Resources */,
+				072B23BE1F12192C00B74BC1 /* Brandon_med.otf in Resources */,
+				07295AE91F1A6322001439AF /* qr_grey@2x.png in Resources */,
+				072B23BF1F12192C00B74BC1 /* Brandon_med_it.otf in Resources */,
+				072B23C01F12192C00B74BC1 /* Brandon_reg.otf in Resources */,
+				072B23C11F12192C00B74BC1 /* Brandon_reg_it.otf in Resources */,
+				072B23C21F12192C00B74BC1 /* Brandon_thin.otf in Resources */,
+				072B23C31F12192C00B74BC1 /* Brandon_thin_it.otf in Resources */,
+				071CCD9C1F094488006C7AD3 /* qr.png in Resources */,
+				071CCDB81F095B3E006C7AD3 /* cancel@3x.png in Resources */,
+				071CCD9B1F094488006C7AD3 /* me@3x.png in Resources */,
+				071CCD9E1F094488006C7AD3 /* qr@3x.png in Resources */,
+				07AF04A71F0ECF9100EE9C20 /* add_new@3x.png in Resources */,
+				071CCDB61F095B3E006C7AD3 /* cancel.png in Resources */,
+				07AF04A61F0ECF9100EE9C20 /* add_new@2x.png in Resources */,
+				071CCDB71F095B3E006C7AD3 /* cancel@2x.png in Resources */,
+				071CCD9A1F094488006C7AD3 /* me@2x.png in Resources */,
+				07295AE61F1A6322001439AF /* me_grey@2x.png in Resources */,
+				07295AE71F1A6322001439AF /* me_grey@3x.png in Resources */,
+				071CCD591F093A74006C7AD3 /* LaunchScreen.storyboard in Resources */,
+				07295AE41F1A6322001439AF /* list_grey@3x.png in Resources */,
+				07295AE81F1A6322001439AF /* qr_grey.png in Resources */,
+				071CCD9D1F094488006C7AD3 /* qr@2x.png in Resources */,
+				072B23AA1F12179B00B74BC1 /* Orange Coral.jpg in Resources */,
+				071CCDB51F095B3E006C7AD3 /* add@3x.png in Resources */,
+				071CCDB41F095B3E006C7AD3 /* add@2x.png in Resources */,
+				07295AEA1F1A6322001439AF /* qr_grey@3x.png in Resources */,
+				07295AE51F1A6322001439AF /* me_grey.png in Resources */,
+				071CCD881F09405F006C7AD3 /* list@3x.png in Resources */,
+				07295AE21F1A6322001439AF /* list_grey.png in Resources */,
+				07AF04A51F0ECF9100EE9C20 /* add_new.png in Resources */,
+				071CCD871F09405F006C7AD3 /* list@2x.png in Resources */,
+				071CCD561F093A74006C7AD3 /* Assets.xcassets in Resources */,
+				071CCD511F093A73006C7AD3 /* Main.storyboard in Resources */,
+				071CCD861F09405F006C7AD3 /* list.png in Resources */,
+				071CCD991F094488006C7AD3 /* me.png in Resources */,
+				071CCDB31F095B3E006C7AD3 /* add.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		071CCD5D1F093A75006C7AD3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		071CCD681F093A75006C7AD3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		071CCD441F093A73006C7AD3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				071CCD541F093A74006C7AD3 /* QR_BCard.xcdatamodeld in Sources */,
+				071CCD4C1F093A73006C7AD3 /* AppDelegate.swift in Sources */,
+				071CCD811F093B67006C7AD3 /* ScannedQRViewController.swift in Sources */,
+				071CCDA01F09556A006C7AD3 /* CreateQRViewController.swift in Sources */,
+				07AF04981F0EBE4300EE9C20 /* ViewDetailsViewController.swift in Sources */,
+				071CCD7D1F093B0B006C7AD3 /* QRScannerController.swift in Sources */,
+				071CCD7F1F093B48006C7AD3 /* MyQRViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		071CCD5B1F093A75006C7AD3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				071CCD641F093A75006C7AD3 /* QR_BCardTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		071CCD661F093A75006C7AD3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				071CCD6F1F093A75006C7AD3 /* QR_BCardUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		071CCD611F093A75006C7AD3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 071CCD471F093A73006C7AD3 /* QR-BCard */;
+			targetProxy = 071CCD601F093A75006C7AD3 /* PBXContainerItemProxy */;
+		};
+		071CCD6C1F093A75006C7AD3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 071CCD471F093A73006C7AD3 /* QR-BCard */;
+			targetProxy = 071CCD6B1F093A75006C7AD3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		071CCD4F1F093A73006C7AD3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				071CCD501F093A73006C7AD3 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		071CCD571F093A74006C7AD3 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				071CCD581F093A74006C7AD3 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		071CCD711F093A75006C7AD3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		071CCD721F093A75006C7AD3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		071CCD741F093A75006C7AD3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = Q9QD5LY5L7;
+				INFOPLIST_FILE = "QR-BCard/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Arnab.QR-BCard";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		071CCD751F093A75006C7AD3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = Q9QD5LY5L7;
+				INFOPLIST_FILE = "QR-BCard/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Arnab.QR-BCard";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		071CCD771F093A75006C7AD3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = Q9QD5LY5L7;
+				INFOPLIST_FILE = "QR-BCardTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Arnab.QR-BCardTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/QR-BCard.app/QR-BCard";
+			};
+			name = Debug;
+		};
+		071CCD781F093A75006C7AD3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = Q9QD5LY5L7;
+				INFOPLIST_FILE = "QR-BCardTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Arnab.QR-BCardTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/QR-BCard.app/QR-BCard";
+			};
+			name = Release;
+		};
+		071CCD7A1F093A75006C7AD3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = Q9QD5LY5L7;
+				INFOPLIST_FILE = "QR-BCardUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Arnab.QR-BCardUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "QR-BCard";
+			};
+			name = Debug;
+		};
+		071CCD7B1F093A75006C7AD3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = Q9QD5LY5L7;
+				INFOPLIST_FILE = "QR-BCardUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Arnab.QR-BCardUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "QR-BCard";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		071CCD431F093A72006C7AD3 /* Build configuration list for PBXProject "QR-BCard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				071CCD711F093A75006C7AD3 /* Debug */,
+				071CCD721F093A75006C7AD3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		071CCD731F093A75006C7AD3 /* Build configuration list for PBXNativeTarget "QR-BCard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				071CCD741F093A75006C7AD3 /* Debug */,
+				071CCD751F093A75006C7AD3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		071CCD761F093A75006C7AD3 /* Build configuration list for PBXNativeTarget "QR-BCardTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				071CCD771F093A75006C7AD3 /* Debug */,
+				071CCD781F093A75006C7AD3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		071CCD791F093A75006C7AD3 /* Build configuration list for PBXNativeTarget "QR-BCardUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				071CCD7A1F093A75006C7AD3 /* Debug */,
+				071CCD7B1F093A75006C7AD3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		071CCD521F093A74006C7AD3 /* QR_BCard.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				071CCD531F093A74006C7AD3 /* QR_BCard.xcdatamodel */,
+			);
+			currentVersion = 071CCD531F093A74006C7AD3 /* QR_BCard.xcdatamodel */;
+			path = QR_BCard.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 071CCD401F093A72006C7AD3 /* Project object */;
+}

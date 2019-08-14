@@ -1,0 +1,6 @@
+framework module Pods_QR_BCard {
+  umbrella header "Pods-QR-BCard-umbrella.h"
+
+  export *
+  module * { export * }
+}
